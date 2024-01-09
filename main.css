@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* ตัวกล่องหลัก */
+/* position: relative; กำหนดให้เป็นตัวหลัก */
+.main{
+    position: relative;
+    width: 350px;
+    margin: 2rem auto;
+    height: 560px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 50px;
+    /* overflow: hidden; */
+}
+.tag{
+    /* position: absolute; ยึดจาก realative (class main)*/
+    position: absolute;
+    top: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 999;
+    background-color: white;
+    padding: .5rem 2rem;
+    border-radius: 5px;
+    color: #333;
+    box-shadow: 2px 2px 4px rgb(122, 120, 120) ;
+    font-weight: 700;
+}
+
+/* ส่วนรูปภาพ */
+.img{
+    position: relative;
+    height: 260px;
+    overflow: hidden;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+}
+.img img{
+    width: 100%;
+
+}
+/* ส่วนเนื้อหา */
+.content{
+    text-align: center;
+    border-bottom: 2px solid #e5e5e5;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 1rem;
+}
+.content h3{
+    border-bottom: 1px solid #e5e5e5;
+}
+.content h1{
+    margin: 1rem 0;
+}
+.content p {
+    color: #9f9f9f;
+}
+
+/* ส่วนท้าย */
+.footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+}
+/* ส่วนท้ายด้านซ้าย */
+.ft-l {
+    display: flex;
+    align-items: center; 
+    padding-left: 2rem;
+}
+.ft-l img {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+}
+.ft-l p{
+    margin-left: .5rem;
+}
+
+/* ส่วนท้ายด้านขวา */
+.ft-r{
+    padding-right: 2rem;
+}
+
+
